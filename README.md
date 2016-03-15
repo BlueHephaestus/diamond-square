@@ -1,9 +1,9 @@
-#This is a rather simple program to generate fractal terrain heightmaps using the diamond square algorithm, using C++ and Qt.
+###This is a rather simple program to generate fractal terrain heightmaps using the diamond square algorithm, using C++ and Qt.
 
 #Description
 The [Wikipedia Page](https://en.wikipedia.org/wiki/Diamond-square_algorithm) has a pretty apt and accurate description of how it works, however there are several things that the programmer can set depending on the output they want.
 
-1. I initialize all of the corner values to be 0.3, since when I initialized it as ~0(0.00001), it resulted in less mountains than I wanted. Changing this can drastically affect the mean elevation of your result.
+1. I initialize all of the corner values to be 0.2, since when I initialized it as ~0(0.00001), it resulted in less mountains than I wanted. Changing this can drastically affect the mean elevation of your result.
 2. I made the length equal to 513x513, since that is currently the largest number I could use with the algorithm and c++ arrays, since using the next(1025x1025) results in a Segmentation fault. Going to likely change this to vectors so that I can go bigger.
 ..* Note: You have to set the dimensions equal to 2^n + 1
 3. On every iteration you reduce the magnitude of the range of the random offset. I started my random offset as a number between (-1, 1), and at first make the "magnitude" equal to 1, so that on the first iteration, we have:
@@ -26,6 +26,10 @@ Want to try it on your machine? Just do:
 * All of the necessary values(except for the dimensions, you have to find/replace or regex that unfortunately) are at the top of the document, and have comments to describe their purpose. 
 * Make sure to add a seed when running the program, such as ./dsquare "gargamel", or else it will not generate.
 * I think that's it, happy generation!
+
+##Sample Output
+You can view any of these in the /sample_outputs directory, but here is the sample that happens with seed "gargamel", anyway:
+![Gargamel example](/sample_output/sample3_gargamel.png)
 
 ##Notes
 * Other than these default values, the wikipedia page actually gives quite a good description of it. I displayed the output using some manual color presets.
