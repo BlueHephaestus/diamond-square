@@ -34,6 +34,6 @@ You can view any of these in the /sample_outputs directory, but here is the samp
 ##Notes
 * Other than these default values, the wikipedia page actually gives quite a good description of it. I displayed the output using some manual color presets.
 * I don't yet have implicit wrapping around the edges on the square step.
-* Feel free to contact me if you have any questions regarding it, otherwise I hope this repository can help other programmers better understand it's implementation, be it for their games, or perhaps just for tinkering!
+* Feel free to [contact me](mailto:blakeedwards777@gmail.com) if you have any questions regarding it, otherwise I hope this repository can help other programmers better understand it's implementation, be it for their games, or perhaps just for tinkering!
 
 
